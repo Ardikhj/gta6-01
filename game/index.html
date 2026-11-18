@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Solmar Bay — an open-world crime story</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #10141c;
+    height: 100%;
+    overflow: hidden;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  #wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: radial-gradient(ellipse at 50% 30%, #1d2b45 0%, #10141c 70%);
+  }
+  canvas {
+    width: min(1280px, 100vw);
+    height: min(720px, 100vh);
+    aspect-ratio: 16 / 9;
+    background: #f7e8c9;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
+    cursor: crosshair;
+    image-rendering: auto;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
